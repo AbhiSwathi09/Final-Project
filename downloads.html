@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color:navy;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px;
+        }
+        .videos {
+            list-style-type: none;
+            padding: 0;
+        }
+        .videos li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: flex-start;
+        }
+        .videos h3 {
+            margin: 0 0 10px 0;
+        }
+        .videos video {
+            max-width: 100%;
+            height: auto;
+        }
+        .videos .video-info {
+            margin-left: 20px;
+            flex: 1;
+        }
+        footer {
+            background-color: navy;
+            color: #fff;
+            text-align: center;
+            padding: 3px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Disney</h1>
+        <h1>Downloads</h1>
+    </header>
+
+
+    <nav>
+        <ul>
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\Disney.html">Disney</a>
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\home1.html">Home</a>
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\login.html">Login</a>
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\about.html">About</a>
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\movies.html">Movies</a>
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\Characters.html">Characters</a>
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\downloads.html">Downloads</a>
+        </ul>
+    </nav>
+<div class="container">
+    <h1>Video Library</h1>
+    
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search videos...">
+        <button onclick="searchVideos()">Search</button>
+    </div>
+    
+    <ul class="videos" id="videos-list">
+        <li>
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <h3>Monsters University</h3>
+                <p>Description:Mike and Sulley, two monsters, join Monsters University in order to graduate as the scariest monsters on the planet. While they are arch-rivals, gradually, they become best friends.
+                </p>
+            </div>
+        </li>
+        <li>
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <h3>Avengers: Endgame</h3>
+                <p>Description: After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.
+                </p>
+            </div>
+        </li>
+        <li>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <h3>Tangled</h3>
+                <p>Description: Rapunzel, an innocent, young girl, is locked up by her overly protective mother. Her wish to escape into the world outside finally comes true when she meets the good-hearted thief, Flynn.
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+    function searchVideos() {
+        var input, filter, ul, li, h3, i, txtValue;
+        input = document.getElementById('search');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("videos-list");
+        li = ul.getElementsByTagName('li');
+        
+        for (i = 0; i < li.length; i++) {
+            h3 = li[i].getElementsByTagName("h3")[0];
+            txtValue = h3.textContent || h3.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script><br><br><br><br><br>
+<footer>
+    <p>&copy; 2024 Disney. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

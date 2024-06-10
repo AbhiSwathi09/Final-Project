@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color:navy;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .container form label {
+            margin-bottom: 5px;
+        }
+        .container form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container form button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container form button:hover {
+            background-color: navy;
+        }
+        .container .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container .links a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container .links a:hover {
+            text-decoration: underline;
+            color:navy;
+        }
+        footer {
+            background-color:navy;
+            color: #fff;
+            text-align: center;
+            padding: 3px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Disney</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Login</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Create New Account</h2>
+        <form action="/login" method="post">
+            <form action="#">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                
+                <label for="confirm_password">Confirm Password:</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required><br>
+                
+                <button type="submit">Create Account</button>
+              </form>
+            
+        <div class="links">
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\login.html">Login</a>
+            <a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\forgot.html">Forgot Password?</a>
+        </div>
+    </div><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Disney. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

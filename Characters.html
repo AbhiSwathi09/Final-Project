@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color:navy;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .container form label {
+            margin-bottom: 5px;
+        }
+        .container form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container form button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container form button:hover {
+            background-color: navy;
+        }
+        .container .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container .links a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container .links a:hover {
+            text-decoration: underline;
+            color:navy;
+        }
+        footer {
+            background-color:navy;
+            color: #fff;
+            text-align: center;
+            padding: 3px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    padding: 14px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.character {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.character:hover {
+    transform: scale(1.05);
+}
+
+.character-image {
+    width: 100%;
+    height: auto;
+}
+
+.character-name {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Disney</h1>
+        <h1>Disney Characters</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\Disney.html">Disney</a></li>
+            <li><a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\home1.html">Home</a></li>
+            <li><a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\login.html">Login</a></li>
+            <li><a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\about.html">About</a></li>
+            <li><a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\movies.html">Movies</a></li>
+            <li><a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\Characters.html">Characters</a></li>
+            <li><a href="C:\Users\abhim\Desktop\UI DEVELOPMENT\Main-Project\downloads.html">Downloads</a></li>
+        </ul>
+    </nav>
+    <h1>Characters</h1>
+    <div class="character-list">
+        <div class="character">
+            <img src="mickey.jpg" alt="Mickey Mouse" class="character-image">
+            <h2 class="character-name">Mickey Mouse</h2>
+        </div>
+        <div class="character">
+            <img src="minnie.jpg" alt="Minnie Mouse" class="character-image">
+            <h2 class="character-name">Minnie Mouse</h2>
+        </div>
+        <div class="character">
+            <img src="duck.jpg" alt="Donald Duck" class="character-image">
+            <h2 class="character-name">Donald Duck</h2>
+        </div>
+        <div class="character">
+            <img src="goofy.jpg" alt="Goofy" class="character-image">
+            <h2 class="character-name">Goofy</h2>
+        </div>
+        <div class="character">
+            <img src="daisy.jpg" alt="Goofy" class="character-image">
+            <h2 class="character-name">Daisy</h2>
+        </div>
+        <!-- Add more characters as needed -->
+    </div>
+    <h1>Princess-Prince</h1>
+    <div class="character-list">
+        <div class="character">
+            <img src="princess.jpg" alt="Mickey Mouse" class="character-image">
+            <h2 class="character-name">Rapunzel</h2>
+        </div>
+        <div class="character">
+            <img src="prince.jpg" alt="Minnie Mouse" class="character-image">
+            <h2 class="character-name">Flynn Rider</h2>
+        </div>
+        <div class="character">
+            <img src="Elsa.jpg" alt="Donald Duck" class="character-image">
+            <h2 class="character-name">Elsa</h2>
+        </div>
+        <div class="character">
+            <img src="aladdin.jpg" alt="Goofy" class="character-image">
+            <h2 class="character-name">Aladdin</h2>
+        </div>
+        <div class="character">
+            <img src="jas.jpg" alt="Goofy" class="character-image">
+            <h2 class="character-name">Jasmine</h2>
+        </div>
+        <!-- Add more characters as needed -->
+    </div>
+
+<br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Disney. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
